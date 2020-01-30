@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+  <title>The Top of Mount Everest</title>
+
+  <!-- OneTrust Cookies Consent Notice start -->
+  <script src="https://cdn.cookielaw.org/consent/0419efbd-d21a-4694-adff-bc74ed0b26ca.js" type="text/javascript" charset="UTF-8"></script>
+  <script type="text/javascript">
+  var cntr = 0;
+  function OptanonWrapper() { 
+    cntr ++;
+    if (cntr === 1) {
+      document.querySelector('body').classList.add('cookie-banner');
+      var alertH = document.querySelector('.optanon-alert-box-wrapper').offsetHeight;
+
+      document.querySelector('.main').style.height = (window.innerHeight - alertH) + 'px';
+    }
+    if (cntr >= 2) {
+      document.querySelector('body').classList.remove('no-cookie');
+      document.querySelector('body').classList.remove('cookie-banner');
+      setTimeout(function() {
+        document.querySelector('.main').removeAttribute('style');
+      }, 100);
+    }
+
+    try {
+      var close = document.querySelector('.optanon-alert-box-wrapper .optanon-alert-box-corner-close');
+      var alertH = document.querySelector('.optanon-alert-box-wrapper').offsetHeight;
+
+      if (window.innerWidth <= 752) {
+        close.style.marginTop = (-7) + 'px';
+        close.style.right = (0) + 'px';
+      } else {
+        close.style.marginTop = (alertH / 2 - 22) + 'px';
+        close.style.right = (10) + 'px';
+      }
+
+      // var links = document.querySelector('.links');
+      // links.style.bottom = (alertH + 10) + 'px';
+    } catch(e) {}
+  }
+  </script>
+  <!-- OneTrust Cookies Consent Notice end -->
+
+  <link rel="icon" type="image/png" href="favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <link rel="stylesheet" href="https://use.typekit.net/dxg6ddq.css">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <script src="js/jquery-3.4.0.min.js"></script>
+  <script type="text/javascript" src="js/Utils.js"></script>
+  <script type="text/javascript" src="js/TransformTool.js"></script>
+  <script type="text/javascript" src="js/DOMTransformTool.js"></script>
+  <script type="text/javascript" src="js/TransformDOMPictures.js"></script>
+  <script type="text/javascript" src="js/html2canvas.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+  <!-- <script src="https://rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script> -->
+  <script src="js/autosize.js"></script>
+  <script src="js/FileSaver.min.js"></script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142552505-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-142552505-1');
+
+    function tracker(eventName) {
+      gtag('event', eventName + '_click');
+    }
+  </script>
+
+</head>
+<body class="no-cookie" current-page="home" face-count="1" review="0" all-done="0" masker="1">
+
+  <div class="main">
+    <div class="bg img"><i></i></div>
+    <div class="bg2 img"><i></i></div>
+    
+    <div class="home-wrapper">
+      <div class="title img"><i></i></div>
+      <!-- <div class="yes-btn img" target-page="choose">
+        <i class="hover"></i>
+        <i class="normal"></i>
+      </div> -->
+      <div class="yes-btn img " cb-target-page="choose"><i></i></div>
+    </div>
+
+    <div class="choose-wrapper">
+      <div class="choose-title img"><i></i></div>
+      <div class="thumb thumb1 img" face="1" target-page="upload" mask="1">
+        <i class="normal"></i>
+        <i class="hover"></i>
+      </div>
+      <div class="thumb thumb2 img" face="2" target-page="upload" mask="2">
+        <i class="normal"></i>
+        <i class="hover"></i>
+      </div>
+      <div class="thumb thumb3 img" face="2" target-page="upload" mask="3">
+        <i class="normal"></i>
+        <i class="hover"></i>
+      </div>
+      <div class="thumb thumb4 img" face="2" target-page="upload" mask="4">
+        <i class="normal"></i>
+        <i class="hover"></i>
+      </div>
+    </div>
+
+    <div class="upload-wrapper">
+      <div class="upload-title img">
+        <i class="title1"></i>
+        <i class="title2"></i>
+      </div>
+      <div class="rope img"><i></i></div>
+      <div class="uploader">
+        <div class="box box1" has-upload="0">
+          <div class="avatar img uploader-thing"><i></i></div>
+          <div class="box-hover img uploader-thing"><i></i></div>
+
+          <input class="preview-input uploader-thing" type="file" onchange="previewFile(this)">
+
+          <div id="dom" class="dom dom1">
+            <img class="image scalable" src="" width="200">
+            <div class="masked-bg masked1"></div>
+            <div class="select-box selector"></div>
+            <svg id="svg-tool" xmlns="http://www.w3.org/2000/svg"></svg>
+          </div>
+
+        </div>
+        <div class="spacer"></div>
+        <div class="box box2" has-upload="0">
+          <div class="avatar img uploader-thing"><i></i></div>
+          <div class="box-hover img uploader-thing"><i></i></div>
+
+          <input class="preview-input2 uploader-thing" type="file" onchange="previewFile2(this)">
+
+          <div id="dom2" class="dom dom2">
+            <img class="image2 scalable" src="" width="200">
+            <div class="masked-bg masked2"></div>
+            <div class="select-box2 selector"></div>
+            <svg id="svg-tool2" xmlns="http://www.w3.org/2000/svg"></svg>
+          </div>
+
+        </div>
+      </div>
+      <div class="next-btn img process-canvas-btn disabled" cb-target-page="caption">
+        <i class="normal"></i>
+        <i class="hover"></i>
+      </div>
+      <div class="clear-btn img disabled">
+        <i class="normal"></i>
+        <i class="hover"></i>
+      </div>
+    </div>
+
+    <div class="caption-wrapper">
+      <div class="caption-title img"><i></i></div>
+      <div class="rope img"><i></i></div>
+      <div class="editor">
+        <p><span class="multi">We are</span><span class="single">I am</span> the first</p> 
+        <!-- <input class="caption-input" type="text" name="caption"> -->
+        <textarea type="text" class="caption-input" rows="1" cols="11" onpaste="window.trimInputs()"></textarea>
+        <!-- <div contenteditable="true" type="text" class="caption-input" rows="1" cols="11"></div> -->
+        <p>to summit!</p>
+      </div>
+      <div class="next-btn process-caption-btn img disabled" cb-target-page="review" is-review="1">
+        <i class="normal"></i>
+        <i class="hover"></i>
+      </div>
+      <div class="skip-btn img" cb-target-page="review" is-review="1">
+        <i class="normal"></i>
+        <i class="hover"></i>
+      </div>
+    </div>
+
+    <div class="review-wrapper">
+      <div class="review-title img">
+        <i class="review"></i>
+        <i class="done"></i>
+      </div>
+      <div class="rope img"><i></i></div>
+      <div class="edit-btn img" target-page="upload" is-review="0" is-done="0">
+        <i class="normal"></i>
+        <i class="hover"></i>
+      </div>
+      <div class="done-btn img process-done-btn disabled" is-done="1" onclick="tracker('image_save')">
+        <i class="normal"></i>
+        <i class="hover"></i>
+      </div>
+      <div class="again-btn img" target-page="choose" is-review="0" is-done="0"><i></i></div>
+      <div class="social social-fb img disabled" onclick="tracker('image_share_facebook')"><a class="fb-link" target="_blank"><i></i></a></div>
+      <div class="social social-tw img disabled" onclick="tracker('image_share_twitter')"><a class="tw-link" target="_blank"><i></i></a></div>
+      <div class="social social-ig img disabled" onclick="tracker('image_donwload')"><a class="dl-link" target="_blank"><i></i></a></div>
+    </div>
+
+    <!-- <div class="disclaimer img"><i></i></div> -->
+    <div class="disclaimer">Your photo will only be used to create your Mt. Everest photo experience.</div>
+    <div class="links">
+      <a href="http://www.hbo.com/html/terms-of-use/index.html" target="_blank">TERMS OF USE</a>
+      <span>|</span>
+      <a href="http://www.hbo.com/html/privacy-policy/index.html" target="_blank">PRIVACY POLICY</a>
+    </div>
+
+    <div class="edited-box">
+      <div class="box">
+        <div class="savable"></div>
+      </div>
+    </div>
+
+    <div class="download-box">
+    </div>
+
+
+    <div class="downloadable-box">
+      <div class="side-a"></div>
+      <div class="side-b"></div>
+      <!-- <div class="main-bg"></div> -->
+    </div>
+
+    <div class="downloadable-box-2"></div>
+
+    <!-- <div class="new"></div> -->
+
+
+  </div>
+
+  <script src="https://www.google.com/recaptcha/api.js?render=6LcSBqsUAAAAAK6dSBxcXQipLbp5VpQlBxaF6gf9"></script>
+  <script>
+  grecaptcha.ready(function() {
+    grecaptcha.execute('6LcSBqsUAAAAAK6dSBxcXQipLbp5VpQlBxaF6gf9', {action: 'upload'}).then(function(token) {
+      document.querySelector('.yes-btn').classList.remove('disabled');
+      document.querySelector('.done-btn').classList.remove('disabled');
+    });
+  });
+  </script>
+
+  <!-- <script src="js/canvas.js"></script> -->
+  <script src="js/binaryajax.js"></script>
+  <script src="js/exif.js"></script>
+  <script src="js/canvasResize.js"></script>
+  <script src="js/app.js"></script>
+
+  <div class="spinner-holder">
+    <img class="spinner" src="img/spinner.gif" >
+  </div>
+  
+</body>
+</html>
